@@ -1,5 +1,4 @@
 import { screen } from '@testing-library/react';
-import { vi } from 'node_modules/vitest/dist/index';
 import React from 'react';
 
 import ProductFilter from '@/pages/home/components/ProductFilter';
