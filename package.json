@@ -76,7 +76,7 @@
     "eslint-plugin-storybook": "^0.6.12",
     "eslint-plugin-vitest": "^0.2.6",
     "jsdom": "^21.1.1",
-    "msw": "^2.1.3",
+    "msw": "^2.4.7",
     "msw-storybook-addon": "^2.0.0--canary.122.b3ed3b1.0",
     "prettier": "^3.0.0",
     "prop-types": "^15.8.1",
