@@ -5,7 +5,7 @@ const config = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
-    'storybook-addon-react-router-v6',
+    'storybook-addon-remix-react-router',
   ],
   framework: {
     name: '@storybook/react-vite',

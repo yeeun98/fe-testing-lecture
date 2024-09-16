@@ -1,5 +1,5 @@
 /** @type { import('@storybook/react').Preview } */
-import { withRouter } from 'storybook-addon-react-router-v6';
+import { withRouter } from 'storybook-addon-remix-react-router';
 import { CssBaseline } from '@mui/material';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { initialize, mswDecorator } from 'msw-storybook-addon';
