@@ -57,8 +57,6 @@
 - 내부 DOM 구조나 로직에 영향을 받지않게 테스팅 라이브러리 API를 통해 적절한 요소를 검증하자
 - 컴포넌트의 최종 렌더링 결과물인 DOM 구조가 올바르게 변경되었는지 검증하자
 
-[테스트 환경과 매처(Matcher) 상세 내용 보기](./unit-test/docs/test-environment-and-matchers.md)
-
-<br>
-
-[Setup과 Teardown 상세 내용 보기](./unit-test/docs/setup-and-teardown.md)
+[테스트 환경과 매처(Matcher) 상세 내용 보기](./unit-test/docs/test-environment-and-matchers.md)<br>
+[Setup과 Teardown 상세 내용 보기](./unit-test/docs/setup-and-teardown.md)<br>
+[React Testing Library와 컴포넌트 테스트](./unit-test/docs/react-testing-library-and-component-test.md)
