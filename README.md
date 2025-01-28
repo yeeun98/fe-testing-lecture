@@ -58,3 +58,4 @@
 - 컴포넌트의 최종 렌더링 결과물인 DOM 구조가 올바르게 변경되었는지 검증하자
 
 [테스트 환경과 매처(Matcher) 상세 내용 보기](./unit-test/docs/test-environment-and-matchers.md)
+[Setup과 Teardown 상세 내용 보기](./unit-test/docs/setup-and-teardown.md)
