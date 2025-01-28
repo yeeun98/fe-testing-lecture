@@ -60,3 +60,9 @@
 [테스트 환경과 매처(Matcher) 상세 내용 보기](./unit-test/docs/test-environment-and-matchers.md)<br>
 [Setup과 Teardown 상세 내용 보기](./unit-test/docs/setup-and-teardown.md)<br>
 [React Testing Library와 컴포넌트 테스트](./unit-test/docs/react-testing-library-and-component-test.md)
+
+### ✅ 단위 테스트 대상 선정 기준
+- state나 로직처리 없이 UI만 그리는 컴포넌트는 검증하지 않는다.
+ : 해당 검증은 스토리북과 같은 도구를 통해 검증
+- 간단한 로직 처리만 하는 컴포넌트는 상위 컴포넌트의 통합 테스트에서 검증한다.
+- 공통 유틸 함수는 단위 테스트로 검증한다.
