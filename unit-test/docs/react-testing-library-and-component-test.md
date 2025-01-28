@@ -2,7 +2,7 @@
 - [React Testing Library](#React-Testing-Library)
 - [spy 함수](#spy-함수)
 - [Vitest에서 제공하는 Mock Function 관련 매처](#Vitest에서-제공하는-Mock-Function-관련-매처)
-
+- [Testing Library - userEvent](#testing-library---userevent)
 ---
 
 ### React Testing Library
@@ -10,8 +10,10 @@
 - 사용자가 앱을 사용하는 방식과 테스트 방식이 유사할수록 신뢰성은 향상됨
 - DOM과 이벤트 인터페이스를 기반으로 요소를 조회하고, 다양한 동작을 시뮬레이션 할 수 있음
 
-DOM 요소를 조회하기 위한 쿼리는 다양하지만 우선 순위가 존재한다.
+DOM 요소를 조회하기 위한 쿼리는 다양하지만 우선 순위가 존재한다.<br>
 🔗 [testing library query priority](https://testing-library.com/docs/queries/about)
+
+---
 
 ### spy 함수
 > 테스트 코드에서 함수의 호출 여부, 인자, 반환 값 등 함수 호출에 관련된 다양한 값을 저장
