@@ -1,7 +1,7 @@
 # 🧪 React Hooks 단위 테스트 with Vitest
 
 ## 📌 리액트 훅 테스트란?
-> **리액트 훅(Hooks)**은 반드시 **리액트 컴포넌트 내부에서만 호출**되어야 하지만,  
+> 리액트 훅(Hooks)은 반드시 **리액트 컴포넌트 내부에서만 호출**되어야 하지만,  
 > `@testing-library/react`의 `renderHook()`을 사용하면 **컴포넌트 없이도 훅을 독립적으로 테스트**할 수 있다.
 
 ✅ **훅을 테스트하는 이유**
@@ -72,7 +72,7 @@ it('훅의 toggleIsModalOpened()를 호출하면 isModalOpened 상태가 toggle�
 
 ---
 
-## 📌 renderHook() 함수란?
+## 📌 `renderHook()` 함수란?
 > renderHook()은 리액트 컴포넌트 없이 훅을 실행하고, 해당 훅이 반환하는 값을 직접 접근할 수 있도록 해주는 함수.
 
 ### ✅ `renderHook()`의 반환 값
@@ -95,7 +95,7 @@ console.log(result.current.isModalOpened); // true
 
 ---
 
-## 📌 act() 함수란?
+## 📌 `act()` 함수란?
 > act()는 상태 업데이트가 발생하는 코드 블록을 감싸서 실행하는 함수
 > React의 상태 변경이 즉시 반영되도록 보장하여 테스트의 일관성을 유지하는 역할을 한다.
 
