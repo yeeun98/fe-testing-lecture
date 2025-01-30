@@ -109,9 +109,9 @@ act(() => {
 
 expect(result.current.isModalOpened).toBe(true);
 ```
-**🚨 이 코드의 문제점**
-•	toggleIsModalOpened()을 호출했지만, 상태 변경이 즉시 반영되지 않을 수 있음.
-•	테스트 실행 시점에서 React의 상태 업데이트가 완료되지 않았을 가능성이 있음.
+**🚨 이 코드의 문제점**<br>
+- toggleIsModalOpened()을 호출했지만, 상태 변경이 즉시 반영되지 않을 수 있음.
+- 테스트 실행 시점에서 React의 상태 업데이트가 완료되지 않았을 가능성이 있음.
 
 ### ✅ 예제 2: `act()`로 실행했을 때
 ```tsx
