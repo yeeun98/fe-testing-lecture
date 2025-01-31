@@ -23,13 +23,13 @@ test("버튼 클릭 이벤트 테스트", () => {
 ---
 
 ### 🎯 userEvent란?
-userEvent는 @testing-library/user-event 모듈에서 제공하는 API로, 실제 사용자 행동을 시뮬레이션하는 방식으로 이벤트를 발생시킨다.
+`userEvent`는 `@testing-library/user-event` 모듈에서 제공하는 API로, 실제 사용자 행동을 시뮬레이션하는 방식으로 이벤트를 발생시킨다.
 
 #### ✅ 특징
 - 사용자의 실제 상호 작용과 유사한 방식으로 이벤트가 발생
 - 한 번의 click이 여러 개의 연쇄적인 이벤트를 발생시킴
 (예: pointerdown → mousedown → pointerup → mouseup → click → focus)
-- disabled 상태의 버튼이나, readonly 입력 필드처럼 사용자가 조작할 수 없는 요소는 자동으로 차단됨
+- `disabled` 상태의 버튼이나, `readonly` 입력 필드처럼 사용자가 조작할 수 없는 요소는 자동으로 차단됨
 - 예제:
 ```jsx
 import { render } from "@testing-library/react";
@@ -57,8 +57,6 @@ test("버튼 클릭 이벤트 테스트", async () => {
 | **입력 테스트 (`input`)** | `fireEvent.change()` 필요 | `userEvent.type()` 사용 가능 |
 | **사용 추천 상황** | `userEvent`에서 지원하지 않는 특정 이벤트 발생 시 | 일반적인 UI 테스트 (권장) |
 
-📌 **테스트의 신뢰성을 높이기 위해 `fireEvent`보다 `userEvent`를 우선적으로 활용하세요!**
-
 ---
 
 ### 💡 언제 fireEvent를 사용해야 할까?
@@ -82,7 +80,7 @@ test("input 값 변경 테스트", () => {
 
 ### 🏆 결론
 
-- ✅ 가능한 한 userEvent를 사용하여 실제 사용자와 유사한 테스트를 작성하는 것이 좋dma
+- ✅ 가능한 한 userEvent를 사용하여 실제 사용자와 유사한 테스트를 작성하는 것이 좋음
 - ✅ fireEvent는 특정 이벤트만 필요할 때 보조적으로 사용
 
 📌 테스트의 신뢰성을 높이기 위해 fireEvent보다 userEvent를 우선적으로 활용!
