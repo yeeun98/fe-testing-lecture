@@ -77,6 +77,16 @@
 - [리액트 훅 테스트(feat. act함수)](./unit-test/docs/react-hook-test.md)<br>
 - [타이머와 비동기 테스트](./unit-test/docs/timer-and-async-test.md)<br>
 - [userEvent를 사용한 사용자 상호작용 테스트](./unit-test/docs/userEvent-Interaction-Testing.md)<br>
+
+### ⚠ 단위 테스트의 한계  
+
+- 🔹 **컴포넌트 간의 상호작용이나 통합적인 흐름을 검증할 수 없음**  
+- 🔹 **실제 사용자 행동과 UI 변화까지 완벽히 반영하지 못할 수 있음**  
+- 🔹 **Mock 데이터를 사용하기 때문에 실환경과 차이가 있을 가능성이 있음**  
+- 🔹 **비즈니스 로직이 복잡할수록 유지보수 비용 증가**  
+
+📌 **따라서, E2E 테스트 및 통합 테스트와 병행하여 전체적인 신뢰성을 확보해야 함!** 🚀
+
 ---
 
 ## 🔗 통합 테스트란?
