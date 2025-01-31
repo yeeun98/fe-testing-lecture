@@ -76,7 +76,7 @@
 - [모듈 모킹(Mock)](./unit-test/docs/module-mocking.md)<br>
 - [리액트 훅 테스트(feat. act함수)](./unit-test/docs/react-hook-test.md)<br>
 - [타이머와 비동기 테스트](./unit-test/docs/timer-and-async-test.md)<br>
-
+- [userEvent를 사용한 사용자 상호작용 테스트](./unit-test/docs/userEvent-Interaction-Testing.md)<br>
 ---
 
 ## 🔗 통합 테스트란?
