@@ -1,4 +1,4 @@
-### 상태 관리와 통합 테스트
+### 🧪 상태 관리와 통합 테스트
 > 예제에서는 [zustand](https://zustand.docs.pmnd.rs/getting-started/introduction)를 사용하여 앱의 상태를 관리한다.
 > 원하는 상태로 통합 테스트를 하기 위해선 zustand 모킹 필요 !
 
@@ -19,7 +19,7 @@ const CartTable = () => {
 ```
 - `CartTable` 컴포넌트를 통합테스트 작성하면, 큰 범위의 통합 테스트는 모킹해야하는 정보가 많아지며 변경에도 깨지기 쉬움
 - `ProductInfoTable`, `PriceSummary`로 나누어 통합 테스트 작성
-    -> 장바구니 state를 사용하여 데이터를 렌더링
+    -> <ins>장바구니 state</ins>를 사용하여 데이터를 렌더링
 - `PageTitle`, `Divider` 컴포넌트는 단순한 UI 렌더링
     -> 테스트 작성 X
 
