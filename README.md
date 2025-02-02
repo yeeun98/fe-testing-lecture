@@ -67,7 +67,7 @@
 - **공통 유틸 함수는 단위 테스트로 검증한다**  
    → **독립적인 로직**이므로 개별적으로 검증이 필요.  
 
-### 📌 **자세한 강의 내용은 아래 문서를 참고**
+#### 📌 **자세한 강의 내용은 아래 문서를 참고**
 - [테스트 환경과 매처(Matcher) 상세 보기](./docs/unit-test/test-environment-and-matchers.md)<br>
 - [Setup과 Teardown 상세 보기](./docs/unit-test/setup-and-teardown.md)<br>
 - [React Testing Library와 컴포넌트 테스트](./docs/unit-test/react-testing-library-and-component-test.md)<br>
