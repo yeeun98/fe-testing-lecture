@@ -67,17 +67,16 @@
 - **공통 유틸 함수는 단위 테스트로 검증한다**  
    → **독립적인 로직**이므로 개별적으로 검증이 필요.  
 
-#### 📌 *자세한 강의 내용은 아래 문서를 참고*
-- [테스트 환경과 매처(Matcher) 상세 보기](./unit-test/docs/test-environment-and-matchers.md)<br>
-- [Setup과 Teardown 상세 보기](./unit-test/docs/setup-and-teardown.md)<br>
-- [React Testing Library와 컴포넌트 테스트](./unit-test/docs/react-testing-library-and-component-test.md)<br>
-- [모듈 모킹(Mock)](./unit-test/docs/module-mocking.md)<br>
-- [리액트 훅 테스트(feat. act함수)](./unit-test/docs/react-hook-test.md)<br>
-- [타이머와 비동기 테스트](./unit-test/docs/timer-and-async-test.md)<br>
-- [userEvent를 사용한 사용자 상호작용 테스트](./unit-test/docs/userEvent-Interaction-Testing.md)<br>
+### 📌 **자세한 강의 내용은 아래 문서를 참고**
+- [테스트 환경과 매처(Matcher) 상세 보기](./docs/unit-test/test-environment-and-matchers.md)<br>
+- [Setup과 Teardown 상세 보기](./docs/unit-test/setup-and-teardown.md)<br>
+- [React Testing Library와 컴포넌트 테스트](./docs/unit-test/react-testing-library-and-component-test.md)<br>
+- [모듈 모킹(Mock)](./docs/unit-test/module-mocking.md)<br>
+- [리액트 훅 테스트(feat. act함수)](./docs/unit-test/react-hook-test.md)<br>
+- [타이머와 비동기 테스트](./docs/unit-test/timer-and-async-test.md)<br>
+- [userEvent를 사용한 사용자 상호작용 테스트](./docs/unit-test/userEvent-Interaction-Testing.md)<br>
 
-#### ⚠ 단위 테스트의 한계  
-
+#### ⚠ 단위 테스트의 한계
 - 🔹 **컴포넌트 간의 상호작용이나 통합적인 흐름을 검증할 수 없음**  
 - 🔹 **실제 사용자 행동과 UI 변화까지 완벽히 반영하지 못할 수 있음**  
 - 🔹 **Mock 데이터를 사용하기 때문에 실환경과 차이가 있을 가능성이 있음**  
@@ -114,6 +113,7 @@
   (예: 메인 페이지 → 네비게이션, 상품 리스트, 검색 영역 분리 검증)
 
 #### 📌 *자세한 강의 내용은 아래 문서를 참고*
+- [통합 테스트 대상 선정하기 (상세)](./docs/integration-test/integration-test-selection.md)<br>
 
 ---
 
