@@ -116,6 +116,7 @@
 - [통합 테스트 대상 선정하기 (상세)](./docs/integration-test/integration-test-selection.md)<br>
 - [상태 관리 모킹하기](./docs/integration-test/state-management-mocking.md)<br>
 - [msw로 API 모킹하기](./docs/integration-test/msw.md)<br>
+- [RTL 비동기 유틸 함수를 활용한 노출 테스트 작성](./docs/integration-test/react-testing-library-async.md)<br>
 
 ---
 
