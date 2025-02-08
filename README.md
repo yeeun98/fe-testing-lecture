@@ -115,6 +115,7 @@
 #### 📌 *자세한 강의 내용은 아래 문서를 참고*
 - [통합 테스트 대상 선정하기 (상세)](./docs/integration-test/integration-test-selection.md)<br>
 - [상태 관리 모킹하기](./docs/integration-test/state-management-mocking.md)<br>
+- [msw로 API 모킹하기](./docs/integration-test/msw.md)<br>
 
 ---
 
