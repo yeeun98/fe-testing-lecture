@@ -117,6 +117,7 @@
 - [상태 관리 모킹하기](./docs/integration-test/state-management-mocking.md)<br>
 - [msw로 API 모킹하기](./docs/integration-test/msw.md)<br>
 - [RTL 비동기 유틸 함수를 활용한 노출 테스트 작성](./docs/integration-test/react-testing-library-async.md)<br>
+- [통합 테스트 작성하기(ProductFilter, NavigationBar)](./docs/integration-test/integration-test-ex.md)<br>
 
 ---
 
