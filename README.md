@@ -68,13 +68,13 @@
    → **독립적인 로직**이므로 개별적으로 검증이 필요.  
 
 #### 📌 **자세한 강의 내용은 아래 문서를 참고**
-- [테스트 환경과 매처(Matcher) 상세 보기](./docs/unit-test/test-environment-and-matchers.md)<br>
-- [Setup과 Teardown 상세 보기](./docs/unit-test/setup-and-teardown.md)<br>
-- [React Testing Library와 컴포넌트 테스트](./docs/unit-test/react-testing-library-and-component-test.md)<br>
-- [모듈 모킹(Mock)](./docs/unit-test/module-mocking.md)<br>
-- [리액트 훅 테스트(feat. act함수)](./docs/unit-test/react-hook-test.md)<br>
-- [타이머와 비동기 테스트](./docs/unit-test/timer-and-async-test.md)<br>
-- [userEvent를 사용한 사용자 상호작용 테스트](./docs/unit-test/userEvent-Interaction-Testing.md)<br>
+- [테스트 환경과 매처(Matcher) 상세 보기](./docs/unit-test/test-environment-and-matchers.md)
+- [Setup과 Teardown 상세 보기](./docs/unit-test/setup-and-teardown.md)
+- [React Testing Library와 컴포넌트 테스트](./docs/unit-test/react-testing-library-and-component-test.md)
+- [모듈 모킹(Mock)](./docs/unit-test/module-mocking.md)
+- [리액트 훅 테스트(feat. act함수)](./docs/unit-test/react-hook-test.md)
+- [타이머와 비동기 테스트](./docs/unit-test/timer-and-async-test.md)
+- [userEvent를 사용한 사용자 상호작용 테스트](./docs/unit-test/userEvent-Interaction-Testing.md)
 
 #### ⚠ 단위 테스트의 한계
 - 🔹 **컴포넌트 간의 상호작용이나 통합적인 흐름을 검증할 수 없음**  
@@ -113,11 +113,12 @@
   (예: 메인 페이지 → 네비게이션, 상품 리스트, 검색 영역 분리 검증)
 
 #### 📌 *자세한 강의 내용은 아래 문서를 참고*
-- [통합 테스트 대상 선정하기 (상세)](./docs/integration-test/integration-test-selection.md)<br>
-- [상태 관리 모킹하기](./docs/integration-test/state-management-mocking.md)<br>
-- [msw로 API 모킹하기](./docs/integration-test/msw.md)<br>
-- [RTL 비동기 유틸 함수를 활용한 노출 테스트 작성](./docs/integration-test/react-testing-library-async.md)<br>
-- [통합 테스트 작성하기(ProductFilter, NavigationBar)](./docs/integration-test/integration-test-ex.md)<br>
+- [통합 테스트 대상 선정하기 (상세)](./docs/integration-test/integration-test-selection.md)
+- [상태 관리 모킹하기](./docs/integration-test/state-management-mocking.md)
+- [msw로 API 모킹하기](./docs/integration-test/msw.md)
+- [RTL 비동기 유틸 함수를 활용한 노출 테스트 작성](./docs/integration-test/react-testing-library-async.md)
+- [통합 테스트 작성하기(ProductFilter, NavigationBar)](./docs/integration-test/integration-test-ex.md)
+- [통합 테스트 한계](./docs/integration-test/integration-test-weekness.md)
 
 ---
 
