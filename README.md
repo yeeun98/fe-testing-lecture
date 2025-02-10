@@ -120,6 +120,78 @@
 - [통합 테스트 작성하기(ProductFilter, NavigationBar)](./docs/integration-test/integration-test-ex.md)
 - [통합 테스트 한계](./docs/integration-test/integration-test-weekness.md)
 
+<br/>
+
+---
+
+<br/>
+
+## Github Actions로 테스트 자동화
+
+### **Github Actions란?**
+- Github에서 제공하는 **CI/CD(지속적 통합 및 배포)** 도구.
+- 코드 변경 시 **자동화된 워크플로우**(테스트, 빌드, 배포 등)를 실행할 수 있음.
+- `.github/workflows` 디렉토리에 YAML 파일을 작성해 설정.
+
+
+### 테스트 자동화의 장점
+1. **자동 실행**:
+   - 코드가 푸시되거나 PR(Pull Request)이 생성되면, 테스트가 자동 실행됨.
+2. **일관된 테스트 환경**:
+   - 동일한 환경에서 테스트를 실행하므로, 로컬 환경 차이로 인한 오류를 방지.
+3. **빠른 피드백**:
+   - 테스트 결과를 PR에서 바로 확인 가능, 코드 품질 향상.
+4. **배포 전 신뢰성 확보**:
+   - 모든 테스트를 통과한 코드만 배포 가능.
+
+
+### **간단한 테스트 자동화 워크플로우 예제**
+```yaml
+name: Run Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run tests
+      run: npm test
+```
+
+#### 설명
+~~~
+1.	트리거:
+- push 또는 pull_request 이벤트가 발생하면 실행.
+2.	환경 설정:
+- 최신 Ubuntu 환경에서 Node.js 16 버전을 설치.
+3.	테스트 실행:
+- npm install로 의존성을 설치하고, npm test 명령어로 테스트 실행.
+~~~
+
+
+### Github Actions로 테스트 자동화의 목표
+- 테스트를 자동화하여 코드 품질 관리와 빠른 피드백 제공.
+- 팀 협업과 배포 과정에서 테스트 신뢰성을 보장.
+
 ---
 
 ## 🎯 마무리
