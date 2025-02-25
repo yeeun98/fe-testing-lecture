@@ -4,6 +4,7 @@ import React from 'react';
 import ProductImagesSwiper from '@/pages/productDetail/components/ProductImagesSwiper';
 import { formatPrice } from '@/utils/formatter';
 
+// 별도의 상태변경이나 비즈니스 로직없이 UI만 랜딩하는 컴포넌트를 테스트하는 것은 큰 의미 없음
 const ProductInfoArea = ({ product }) => {
   return (
     <>

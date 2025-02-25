@@ -23,6 +23,8 @@ const queryClient = new QueryClient({
 
 export default async (component, options = {}) => {
   const { routerProps } = options;
+// userEvent :: 클릭 키보드 이벤트등 다양한 사용자의 이벤트를 시뮬레이션 할 수 있게하는 라이브러리
+  // setup이라는 함수를 통해 반환받은 인스턴스를 통해 api를 사용할 수 있음
   const user = userEvent.setup();
 
   return {

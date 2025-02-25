@@ -23,18 +23,20 @@ vi.mock('react-router-dom', async () => {
   };
 });
 
-it('"Wish Mart" 사이트 제목을 클릭할 경우 "/" 경로로 navigate가 호출된다.', async () => {
+it('"Wish Mart" 텍스트 로고을 클릭할 경우 "/" 경로로 navigate가 호출된다.', async () => {
   const { user } = await render(<NavigationBar />);
 
   await user.click(screen.getByText('Wish Mart'));
 
-  expect(navigateFn).toHaveBeenNthCalledWith(1, '/');
+  expect(navigateFn).toHaveBeenLastCalledWith(1, '/');
 });
 
 describe('로그인이 된 경우', () => {
+  // 로그인 상태와 장바구니 상품에 대한 스토어 모킹
   const userId = 10;
 
   beforeEach(() => {
+    // use() : msw에서 이미 모킹된 데이터를 새로운 응답으로 재정의하거나 추가 핸들러를 동적으로 설정
     server.use(
       rest.get('/user', (_, res, ctx) => {
         return res(
@@ -86,9 +88,7 @@ describe('로그인이 된 경우', () => {
 
     expect(screen.getByTestId('cart-icon')).toBeInTheDocument();
     expect(screen.getByText('2')).toBeInTheDocument();
-    expect(
-      await screen.findByRole('button', { name: 'Maria' }),
-    ).toBeInTheDocument();
+    expect(await screen.findByRole('button', { name: 'Maria' })).toBeInTheDocument();
   });
 
   it('장바구니 버튼 클릭 시 "/cart" 경로로 navigate를 호출한다.', async () => {

@@ -47,15 +47,11 @@ it('장바구니에 포함된 아이템들의 이름, 수량, 합계가 제대�
 
   const [firstItem, secondItem] = screen.getAllByRole('row');
 
-  expect(
-    within(firstItem).getByText('Handmade Cotton Fish'),
-  ).toBeInTheDocument();
+  expect(within(firstItem).getByText('Handmade Cotton Fish')).toBeInTheDocument();
   expect(within(firstItem).getByRole('textbox')).toHaveValue('3');
   expect(within(firstItem).getByText('$2,427.00')).toBeInTheDocument();
 
-  expect(
-    within(secondItem).getByText('Awesome Concrete Shirt'),
-  ).toBeInTheDocument();
+  expect(within(secondItem).getByText('Awesome Concrete Shirt')).toBeInTheDocument();
   expect(within(secondItem).getByRole('textbox')).toHaveValue('4');
   expect(within(secondItem).getByText('$1,768.00')).toBeInTheDocument();
 });
@@ -66,7 +62,9 @@ it('특정 아이템의 수량이 변경되었을 때 값이 재계산되어 올
 
   const input = within(firstItem).getByRole('textbox');
 
+  // 인풋 값을 reset
   await user.clear(input);
+  // 5를 입력해 수량 변경
   await user.type(input, '5');
 
   // 2427 + 809 * 2 = 4045
@@ -76,6 +74,7 @@ it('특정 아이템의 수량이 변경되었을 때 값이 재계산되어 올
 it('특정 아이템의 수량이 1000개로 변경될 경우 "최대 999개 까지 가능합니다!"라고 경고 문구가 노출된다', async () => {
   const alertSpy = vi.fn();
 
+  // window.alert -> alertSpy로 대체
   vi.stubGlobal('alert', alertSpy);
 
   const { user } = await render(<ProductInfoTable />);
@@ -95,9 +94,12 @@ it('특정 아이템의 삭제 버튼을 클릭할 경우 해당 아이템이 �
   const [, secondItem] = screen.getAllByRole('row');
   const deleteButton = within(secondItem).getByRole('button');
 
-  expect(screen.getByText('Awesome Concrete Shirt')).toBeInTheDocument();
+  // 요소가 dom에 존재하는지 단언할 때 getByText
+  expect((secondItem).getByText('Awesome Concrete Shirt')).toBeInTheDocument();
 
   await user.click(deleteButton);
 
-  expect(screen.queryByText('Awesome Concrete Shirt')).not.toBeInTheDocument();
+  // queryBy~~ : 요소의 존재 유무 판단. 요소가 존재하지 않아도 에러 안남
+  // 요소가 dom에 존재하지 않는 것을 단언할 때 queryBy~~
+  expect((secondItem).queryByText('Awesome Concrete Shirt')).not.toBeInTheDocument();
 });

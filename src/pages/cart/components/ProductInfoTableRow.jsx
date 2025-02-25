@@ -12,6 +12,8 @@ import { MAX_CART_VALUE } from '@/constants';
 import { cartValidationMessages } from '@/messages';
 import { formatPrice } from '@/utils/formatter';
 
+// 상품명, 가격과 같은 정보와 삭제, 수량 변경 필드 렌더링
+// 테이블의 모든 상품을 대상으로 기능 검증이 효율적
 const ProductInfoTableRow = ({
   item,
   user,
@@ -21,6 +23,7 @@ const ProductInfoTableRow = ({
   const { id, title, count, images, price } = item;
 
   const handleClickDeleteItem = itemId => () => {
+    // 스파이 함수로 호출 여부만 검증 가능
     removeCartItem(itemId, user.id);
   };
 
