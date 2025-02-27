@@ -7,3 +7,22 @@ import render from '@/utils/test/render';
 it('sample test.', async () => {
   expect(1).toBe(1);
 });
+
+it('기본 placeholder "텍스트를 입력해 주세요."가 노출된다.', async () => {
+  await render(<TextField />);
+
+  const textInput = screen.getByPlaceholderText('텍스트를 입력해 주세요.');
+
+  expect(textInput).toBeInTheDocument();
+});
+
+it('텍스트를 입력하면 onChange prop으로 등록한 함수가 호출된다.', async () => {
+  const spy = vi.fn();
+  
+  const { user } = await render(<TextField onChange={spy} />);
+
+  const textInput = screen.getByPlaceholderText('텍스트를 입력해 주세요.');
+
+  await user.type(textInput, 'test');
+  expect(textInput).toHaveBeenCalledWith('test');
+});
