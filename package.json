@@ -4,16 +4,19 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "lint": "eslint --fix .",
     "dev:server": "node --watch server/index.js",
     "dev:ui": "vite",
     "dev": "concurrently --kill-others 'npm run dev:server' 'npm run dev:ui'",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest",
-    "test:ui": "vitest --ui",
+    "test": "NODE_ENV=production vitest",
+    "test:ui": "NODE_ENV=production vitest --ui",
     "eslint": "eslint 'src/**/*.js' 'src/**/*.jsx'"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^5.11.9",
     "@mui/lab": "5.0.0-alpha.124",
     "@mui/material": "^5.11.10",
@@ -54,7 +57,7 @@
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",
-    "@vitest/ui": "^0.33.0",
+    "@vitest/ui": "^1.4.0",
     "concurrently": "8.2.0",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
@@ -73,7 +76,7 @@
     "storybook-addon-react-router-v6": "1.0.2",
     "vite": "^4.4.4",
     "vite-plugin-eslint": "^1.8.1",
-    "vitest": "^0.33.0"
+    "vitest": "^1.4.0"
   },
   "overrides": {
     "@testing-library/dom": "^9.0.1"
