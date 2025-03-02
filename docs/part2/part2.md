@@ -69,9 +69,18 @@ UI 테스트는 사용자가 웹 애플리케이션을 조작할 때 발생하�
 
 💡 `toMatchSnapshot()` 또는 `toMatchInlineSnapshot()`을 사용하여 구현할 수 있습니다.<br/>
 
-<br/>
-
 #### 📌 *자세한 강의 내용은 아래 문서를 참고*
 - [스냅샷 테스트](./ui-test/snap-shot/snap-shot.md)
 - [스냅샷 테스트의 한계](./ui-test/snap-shot/snapshot-test-limitations.md)
 
+<br/>
+
+### 📌 시각적 회귀 테스트 (Visual Regression Testing)
+~~~
+시각적 회귀 테스트(Visual Regression Testing, VRT)는 UI의 시각적 요소가 변경되지 않았는지 확인하는 테스트 방식입니다.
+기존 스냅샷 테스트(`toMatchSnapshot()`)는 HTML 구조만 비교하지만, 시각적 회귀 테스트는 실제 렌더링된 UI의 "이미지"를 비교하여 변경 사항을 감지합니다.
+~~~
+
+#### 📌 *자세한 강의 내용은 아래 문서를 참고*
+- [시각적 회귀 테스트란](./ui-test/visual-regression-testing/what-is-visual-regression-testing.md)
+- [스토리북](./ui-test/visual-regression-testing/story-book.md)
