@@ -64,7 +64,7 @@
     "@vitest/ui": "^0.33.0",
     "chromatic": "^9.1.0",
     "concurrently": "8.2.0",
-    "cypress": "^12.17.1",
+    "cypress": "^12.17.4",
     "cypress-real-events": "^1.11.0",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
