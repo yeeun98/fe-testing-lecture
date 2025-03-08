@@ -6,7 +6,7 @@
 - [👩🏻‍💻 UI 테스트](#UI-테스트)
 	- [📸 스냅샷 테스트](#스냅샷-테스트)
 	- [🎨 시각적 회귀 테스트](#시각적-회귀-테스트)
-- [🔗 E2E 테스트와 Cypress](#e2e-테스트와-cypress)
+- [🔗 E2E 테스트](#e2e-테스트)
 - [⚙️ CI/CD 환경에서의 테스트 자동화](#cicd-환경에서의-테스트-자동화)
 
 ---
@@ -56,6 +56,8 @@ UI 테스트는 사용자가 웹 애플리케이션을 조작할 때 발생하�
 ✔ 사용자 인터랙션(클릭, 입력 등)이 정상적으로 동작하는지 검증<br/>
 ✔ 디자인 및 레이아웃 변경 시 예기치 않은 UI 깨짐 방지<br/>
 
+<br/>
+
 ### 스냅샷 테스트
 
 ~~~
@@ -75,7 +77,7 @@ UI 테스트는 사용자가 웹 애플리케이션을 조작할 때 발생하�
 
 <br/>
 
-### 📌 시각적 회귀 테스트 (Visual Regression Testing)
+### 시각적 회귀 테스트
 ~~~
 시각적 회귀 테스트(Visual Regression Testing, VRT)는 UI의 시각적 요소가 변경되지 않았는지 확인하는 테스트 방식입니다.
 기존 스냅샷 테스트(`toMatchSnapshot()`)는 HTML 구조만 비교하지만, 시각적 회귀 테스트는 실제 렌더링된 UI의 "이미지"를 비교하여 변경 사항을 감지합니다.
@@ -84,3 +86,18 @@ UI 테스트는 사용자가 웹 애플리케이션을 조작할 때 발생하�
 #### 📌 *자세한 강의 내용은 아래 문서를 참고*
 - [시각적 회귀 테스트란](./ui-test/visual-regression-testing/what-is-visual-regression-testing.md)
 - [스토리북](./ui-test/visual-regression-testing/story-book.md)
+- [크로마틱](./ui-test/visual-regression-testing/chromatic.md)
+- [스냅샷 테스트](./ui-test/snap-shot/snap-shot.md)
+- [스냅샷 테스트의 한계](./ui-test/snap-shot/snapshot-test-limitations.md)
+
+<br/>
+
+### E2E 테스트
+~~~
+E2E(End-to-End) 테스트는 실제 애플리케이션을 구동하여 **전체 소프트웨어 시스템의 흐름을 검증하는 테스트 방법**이다. 사용자가 애플리케이션을 사용하는 동안 발생할 수 있는 다양한 시나리오가 실제 환경에서 정상적으로 작동하는지를 확인한다.
+~~~
+
+#### 📌 *자세한 강의 내용은 아래 문서를 참고*
+- [E2E 테스트란?](./e2e/what-is-e2e.md)
+- [cypress란?](./e2e/cypress.md)
+- [cypress로 E2E 테스트작성하기](./e2e/write-test-code-with-cypress.md)
