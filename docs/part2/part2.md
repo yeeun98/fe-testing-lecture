@@ -101,3 +101,4 @@ E2E(End-to-End) 테스트는 실제 애플리케이션을 구동하여 **전체 
 - [E2E 테스트란?](./e2e/what-is-e2e.md)
 - [cypress란?](./e2e/cypress.md)
 - [cypress로 E2E 테스트작성하기](./e2e/write-test-code-with-cypress.md)
+- [cypress와 쿼리](./e2e/cypress-and-query.md)
