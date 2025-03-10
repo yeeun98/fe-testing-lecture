@@ -28,9 +28,13 @@ Cypress.Commands.add('getProductCardByIndex', index => {
 });
 
 Cypress.Commands.addQuery('getCartButton', () => {
+  // cy.now()로 감싸 특정 쿼리를 호출 -> subject를 받아 inner function에서 쿼리(get)를 실행할 수 있음
   const getFn = cy.now('get', `[data-testid="cart-icon"]`);
 
+  // inner function 형태로 반환해야 함
   return subject => {
+    // cart-icon testid를 가진 요소를 조회하는 get 쿼리
+    // 우리가 원하는 subject를 기준으로 실행함
     const btn = getFn(subject);
 
     return btn;
