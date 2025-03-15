@@ -102,3 +102,6 @@ E2E(End-to-End) 테스트는 실제 애플리케이션을 구동하여 **전체 
 - [cypress란?](./e2e/cypress.md)
 - [cypress로 E2E 테스트작성하기](./e2e/write-test-code-with-cypress.md)
 - [cypress와 쿼리](./e2e/cypress-and-query.md)
+- [커스텀 커맨드와 쿼리](./e2e/custom-command-and-query.md)
+- [Cypress 실전 예제: cy.session()과 커스텀 명령어](./e2e/cypress-example.md)
+- [서버 요청 가로채기](./e2e/cypress-interceptor.md)
