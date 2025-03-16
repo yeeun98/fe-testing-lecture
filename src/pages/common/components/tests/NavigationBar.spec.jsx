@@ -10,13 +10,16 @@ import {
 import render from '@/utils/test/render';
 import { server } from '@/utils/test/setupTests';
 
+// vi.fn()으로 생성된 함수 -> 스텁이자 스파이
 const navigateFn = vi.fn();
 
 vi.mock('react-router-dom', async () => {
   const original = await vi.importActual('react-router-dom');
   return {
     ...original,
+    // 스파이 함수를 통해 페이지 이동에 필요한 값이 올바르게 전달되었는지 검증
     useNavigate: () => navigateFn,
+    // 고정된 값을 넘겨주는 스텁 함수로 대체
     useLocation: () => ({
       pathname: 'pathname',
     }),
